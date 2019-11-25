@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文字凸起</title>
+    <style>
+        body {
+            background-color: #ccc;
+            text-align: center;
+        }
+        div {
+            color: #ccc;
+            font-size: 50px;
+            font-weight: 700;
+        }
+        div:first-child {
+            text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
+        }
+        div:last-child {
+            text-shadow: 1px 1px 1px #fff, -1px -1px 1px #000;
+        }
+    </style>
+</head>
+<body>
+<div>我是凸起的文字</div>
+<div>我是凹下的文字</div>
+</body>
+</html>
