@@ -10,12 +10,23 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, input {
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: #f3f5f7;
+}
 ol, ul {
     list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #050505;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
 }
 .clearfix:before,.clearfix:after {
     content: '';
@@ -27,3 +38,318 @@ ol, ul {
 .clearfix {
     *zoom: 1;
 }
+header {
+    height: 100px;
+    overflow: hidden;
+}
+header nav {
+    width: 1200px;
+    height: 50px;
+    margin: 25px auto;
+}
+header nav .logo {
+    float: left;
+}
+header nav .navbar {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 50px;
+}
+nav .navbar li{
+    float: left;
+    margin-right: 20px;
+}
+.navbar li a {
+    padding: 0 10px;
+    display: block;
+    height: 50px;
+    font-size: 18px;
+}
+.navbar li a.active,
+.navbar li a:hover {
+    border-bottom: 2px solid #00a4ff;
+    color: #00a4ff;
+}
+nav .search {
+    width: 300px;
+    height: 48px;
+    border: 1px solid #00a4ff;
+    float: right;
+}
+.search input[type=text] {
+    width: 230px;
+    height: 48px;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    float: left;
+    font-size: 16px;
+}
+.search input[type=button] {
+    width: 50px;
+    height: 48px;
+    float: left;
+    border: none;
+    background: #00a4ff url("./images/search.png") no-repeat center;
+    cursor: pointer;
+}
+nav .self {
+    float: right;
+    width: 300px;
+    height: 50px;
+    margin-left: 20px;
+    line-height: 50px;
+}
+.self .self-left{
+    float: left;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+.self-left img{
+    position: absolute;
+    top: 10px;
+    padding-left: 10px;
+}
+.self-right {
+    width: 180px;
+    float: left;
+    padding-left: 20px;
+    height: 50px;
+    position: relative;
+}
+.self-right img{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+}
+.self-right span{
+     margin-left: 40px;
+ }
+
+.banner{
+    height: 420px;
+    background-color: #001736;
+}
+.banner .banner-in {
+    height: 420px;
+    background: url("./images/bg4.jpg") no-repeat 0 0;
+}
+.banner .banner-in .slidebar {
+    height: 420px;
+    width: 190px;
+    background-color: rgba(0,0,0,0.4);
+    float: left;
+}
+.slidebar li a{
+    color: #fff;
+    font-size: 14px;
+    padding: 0 20px;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+}
+.slidebar a span {
+    float: right;
+    font-family: Arial;
+}
+.slidebar a:hover {
+    color: #00a4ff;
+}
+
+.banner .banner-in .timetable {
+    float: right;
+    width: 230px;
+    height: 300px;
+    margin-top: 50px;
+    margin-right: 20px;
+    background-color: #fff;
+}
+.timetable dt {
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    background-color: #9bceea;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+.timetable dd {
+    width: 191px;
+    height: 48px;
+    margin: 0 auto;
+    padding-top: 12px;
+    border-bottom: 1px solid #ccc;
+}
+.timetable dd:last-child {
+    border: none;
+}
+.timetable dd h4 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #4e4e4e;
+}
+.timetable dd p {
+    font-size: 14px;
+    color: #a5a5a5;
+}
+.timetable dd a {
+    width: 189px;
+    height: 38px;
+    line-height: 38px;
+    display: inline-block;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    color: #00a4ff;
+    font-weight: 700;
+}
+.timetable dd a:hover {
+    color: #fff;
+    background-color: #00a4ff;
+}
+.recommend {
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+    margin-top: 10px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+}
+.recommend a {
+    padding: 0 30px;
+    border-left: 1px solid #ccc;
+}
+.recommend a:hover {
+    color: #00a4ff;
+}
+.recommend a:first-child {
+    color: #00a4ff;
+    border: none;
+}
+.recommend a:last-child {
+    border: none;
+    float: right;
+    color: #00a4ff;
+    font-size: 14px;
+}
+
+.recommend-content {
+    margin-top: 20px;
+}
+.recommend-content .title {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    height: 40px;
+    line-height: 40px;
+}
+.title h3 {
+    color: #494949;
+    font-size: 17px;
+    font-weight: normal;
+}
+.title a {
+    color: #a5a5a5;
+    font-size: 14px;
+}
+.recommend-content .content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.content .box {
+    width: 210px;
+    height: 244px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+    position: relative;
+}
+.box .book{
+    height: 135px;
+    width: 210px;
+}
+.box .new {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 0px;
+    right: 5px;
+}
+.box img{
+    height: 100%;
+    width: 100%;
+}
+.box .describe {
+    padding: 20px;
+}
+.box .describe h4 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+}
+.box .describe p {
+    font-size: 13px;
+    color: #a5a5a5;
+    margin-top: 10px;
+}
+.describe p span {
+    color: #ffa500;
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 100px;
+    background-color: #fff;
+    height: 245px;
+}
+footer .foot-left {
+    float: left;
+}
+.foot-left img {
+    height: 50px;
+    width: 210px;
+    margin-top: 28px;
+    margin-bottom: 22px;
+}
+.foot-left p {
+    font-size: 14px;
+    color: #a5a5a5;
+}
+.foot-left a {
+    height: 32px;
+    width: 110px;
+    margin-top: 18px;
+    line-height: 32px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #00a4ff;
+    color: #00a4ff;
+}
+.foot-left a:hover {
+    color: #fff;
+    background-color: #00a4ff;
+}
+.foot-right {
+    float: right;
+    width: 480px;
+    margin-top: 35px;
+}
+
+.foot-right dl {
+    float: left;
+    width: 160px;
+}
+.foot-right dl dt {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.foot-right dl dd {
+    font-size: 13px;
+    line-height: 20px;
+}
+
