@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>滑动门</title>
+    <style type="text/css" rel="stylesheet">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        header {
+            background: url("./images/bg.jpg") repeat-x;
+            height: 500px;
+            overflow: hidden;
+        }
+        nav {
+            height: 75px;
+            width: 1000px;
+            margin: 21px auto;
+        }
+        nav li {
+            float: left;
+            margin-right: 20px;
+        }
+        li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            height: 33px;
+            line-height: 33px;
+            display: inline-block;
+            background: url("./images/nav.png") no-repeat;
+            padding-left: 15px;
+        }
+        li a:hover, li a:hover span {
+            background-image: url("./images/hover.png");
+        }
+        a span {
+            background: url("./images/nav.png") no-repeat right;
+            padding-right: 15px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href=""><span>首页</span></a></li>
+            <li><a href=""><span>帮助与反馈</span></a></li>
+            <li><a href=""><span>公众平台</span></a></li>
+            <li><a href=""><span>开放平台</span></a></li>
+            <li><a href=""><span>表情开放平台</span></a></li>
+            <li><a href=""><span>微信网页版</span></a></li>
+        </ul>
+    </nav>
+</header>
+</body>
+</html>

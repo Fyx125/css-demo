@@ -118,18 +118,20 @@ nav .self {
     float: left;
     padding-left: 20px;
     height: 50px;
-    position: relative;
+    /*position: relative;*/
 }
 .self-right img{
     height: 32px;
     width: 32px;
     border-radius: 50%;
-    position: absolute;
-    top: 10px;
+    /*position: absolute;*/
+    /*top: 10px;*/
     cursor: pointer;
+    vertical-align: middle;
 }
 .self-right span{
-     margin-left: 40px;
+     /*margin-left: 40px;*/
+    margin-left: 10px;
  }
 
 .banner{
@@ -208,6 +210,7 @@ nav .self {
     text-align: center;
     color: #00a4ff;
     font-weight: 700;
+    transition: all 0.6s;
 }
 .timetable dd a:hover {
     color: #fff;
@@ -259,13 +262,13 @@ nav .self {
 }
 .recommend-content .content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .content .box {
     width: 210px;
     height: 244px;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2), -2px 2px 2px rgba(0,0,0,0.2);
     margin-bottom: 15px;
     position: relative;
 }
@@ -317,7 +320,7 @@ footer .foot-left {
     margin-bottom: 22px;
 }
 .foot-left p {
-    font-size: 14px;
+    font-size: 12px;
     color: #a5a5a5;
 }
 .foot-left a {
@@ -329,6 +332,7 @@ footer .foot-left {
     display: inline-block;
     border: 1px solid #00a4ff;
     color: #00a4ff;
+    transition: all 0.6s;
 }
 .foot-left a:hover {
     color: #fff;
@@ -352,4 +356,7 @@ footer .foot-left {
     font-size: 13px;
     line-height: 20px;
 }
-
+.foot-right dl dd a:hover {
+    color: #00a4ff;
+    text-decoration: underline;
+}
