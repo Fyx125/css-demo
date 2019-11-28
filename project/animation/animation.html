@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画demo</title>
+    <style type="text/css" rel="stylesheet">
+        body {
+            background-color: #CCD1D4;
+        }
+        .car {
+            margin: 100px auto;
+        }
+        .car img {
+            width: 200px;
+            height: 100px;
+            animation: car 4s linear infinite;
+        }
+        @keyframes car {
+            0% {
+                transform: translate3d(0,0,0);
+            }
+            50% {
+                transform: translate3d(1200px,0,0);
+            }
+            51% {
+                transform: translate3d(1200px,0,0) rotateY(180deg);
+            }
+            99% {
+                transform: translate3d(0,0,0) rotateY(180deg);
+            }
+            100% {
+                transform: translate3d(0,0,0);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="car">
+    <img src="car.jpg" alt="小汽车">
+</div>
+
+</body>
+</html>

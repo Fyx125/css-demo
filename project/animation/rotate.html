@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旋转相册</title>
+    <style type="text/css" rel="stylesheet">
+        body {
+            perspective: 1000px;
+        }
+        .rotate {
+            width: 250px;
+            height: 156px;
+            background: url("4.jpg") no-repeat;
+            margin: 200px auto;
+            background-size: cover;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: all 5s linear;
+        }
+        .rotate:hover {
+            transform: rotateY(360deg);
+        }
+        .rotate div {
+            height: 100%;
+            width: 100%;
+            background: url("3.jpg") no-repeat;
+            background-size: cover;
+            position: absolute;
+        }
+        .rotate div:nth-child(1) {
+            transform: rotateY(0deg) translateZ(400px);
+        }
+        .rotate div:nth-child(2) {
+            transform: rotateY(60deg) translateZ(400px);
+        }
+        .rotate div:nth-child(3) {
+            transform: rotateY(120deg) translateZ(400px);
+        }
+        .rotate div:nth-child(4) {
+            transform: rotateY(180deg) translateZ(400px);
+        }
+        .rotate div:nth-child(5) {
+            transform: rotateY(240deg) translateZ(400px);
+        }
+        .rotate div:nth-child(6) {
+            transform: rotateY(300deg) translateZ(400px);
+        }
+    </style>
+</head>
+<body>
+<div class="rotate">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+</body>
+</html>
