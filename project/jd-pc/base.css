@@ -11,9 +11,12 @@ body {
     background-color: #f6f6f6;
     font-family: Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;;
 }
-ul, h1 {
+ul, h1, h2, h3, h4, h5, input, button, p, dl, dt, dd, header, footer {
     margin: 0;
     padding: 0;
+}
+input, button {
+    outline: none;
 }
 ul {
     list-style: none;
@@ -54,6 +57,19 @@ header img {
 .shortcut .fr li {
     float: left;
 }
+.shortcut .fr li .dropdown-layer{
+    width: 280px;
+    height: 200px;
+    display: none;
+    position: absolute;
+    z-index: 100;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+.shortcut .fr li:hover .dropdown-layer{
+    display: block;
+}
 .shortcut .space {
     width: 1px;
     height: 10px;
@@ -89,4 +105,291 @@ header img {
     height: 120px;
     background: url("images/sprite.png") no-repeat 0 0;
     overflow: hidden;
+}
+.form {
+    width: 546px;
+    height: 32px;
+    position: absolute;
+    top: 25px;
+    left: 260px;
+    border: 2px solid #e2231a;
+}
+.form input[type=text] {
+    width: 425px;
+    height: 26px;
+    line-height: 26px;
+    padding: 2px 44px 2px 17px;
+    border: 1px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 12px;
+}
+.form span {
+    position: absolute;
+    right: 70px;
+    top: 7px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.form span i {
+    font-family: "icomoon";
+    font-style: normal;
+    color: #9f9f9f;
+}
+.form button {
+    width: 50px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #e1251b;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+.form button i {
+    font-family: "icomoon";
+    font-style: normal;
+    color: #fff;
+}
+.shop-car {
+    width: 130px;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    right: 210px;
+    top: 25px;
+}
+.shop-car i {
+    font-family: "icomoon";
+    font-style: normal;
+    color: #e1251b;
+}
+.shop-car a {
+    color: #e1251b;
+    margin-left: 5px;
+}
+.shop-car span {
+    width: 14px;
+    height: 14px;
+    line-height: 15px;
+    background-color: #e1251b;
+    border-radius: 50%;
+    font-size: 12px;
+    position: absolute;
+    left: 33px;
+    top: 3px;
+    color: #fff;
+}
+.hot-words {
+    position: absolute;
+    left: 260px;
+    top: 68px;
+}
+.hot-words a {
+    margin-right: 3px;
+}
+.hot-words a:hover {
+    color: #e1251b;
+}
+.nav-items {
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 203px;
+}
+.nav-items li {
+    float: left;
+}
+.nav-items li a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #555;
+    margin-left: 30px;
+}
+.nav-items li a:hover {
+    color: #e1251b;
+}
+.treasure {
+    width: 190px;
+    height: 120px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+.treasure a {
+    display: block;
+    width: 190px;
+    height: 120px;
+    background: url("./images/treasure.png") no-repeat;
+}
+
+footer {
+    margin-top: 50px;
+}
+footer .service {
+    padding: 30px 0;
+    border-bottom: 1px solid #dedede;
+}
+.service ul {
+    height: 42px;
+    line-height: 42px;
+    overflow: hidden;
+}
+.service li {
+    float: left;
+    width: 297px;
+}
+.service li .box {
+    position: relative;
+    padding-left: 45px;
+    margin: 0 auto;
+    width: 180px;
+}
+.box h5 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 42px;
+    text-indent: -999px;
+}
+.box p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #444;
+}
+.box .duo{
+    background: url("./images/service.png") no-repeat 0 -192px;
+}
+.box .kuai{
+    background: url("./images/service.png") no-repeat -41px -192px;
+}
+.box .hao{
+    background: url("./images/service.png") no-repeat -82px -192px;
+}
+.box .sheng{
+    background: url("./images/service.png") no-repeat -123px -192px;
+}
+footer .help {
+    padding: 20px 0;
+    border-bottom: 1px solid #dedede;
+}
+.help .content {
+    height: 160px;
+    overflow: hidden;
+}
+.help .content dl {
+    float: left;
+    width: 198px;
+    line-height: 22px;
+}
+.help .content dl dt {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.content dd a {
+    color: #666;
+}
+.content dd a:hover {
+    color: #e1251b;
+}
+.content .cover {
+    width: 200px;
+    height: 150px;
+    float: right;
+    background: url("./images/service.png") no-repeat 0 0;
+    color: #666;
+}
+.cover h5 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+.cover p {
+    font-size: 12px;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+.cover p:nth-child(3) {
+    text-align: right;
+}
+.cover p a {
+    color: #666;
+}
+.cover p i {
+    font-family: "icomoon";
+    font-style: normal;
+    margin-left: 3px;
+}
+.copyright {
+    padding: 15px 0;
+    text-align: center;
+}
+.copyright p span {
+    margin: 0 10px;
+    color: #ccc;
+}
+.copyright p a:hover {
+    color: #e1251b;
+}
+.copyright .content {
+    padding: 10px 0;
+    line-height: 22px;
+    color: #999;
+}
+.copyright .content a i {
+    width: 15px;
+    height: 12px;
+    display: inline-block;
+    font-style: normal;
+    margin-right: 5px;
+}
+.copyright .content .i1 {
+    background: url("./images/service.png") no-repeat -108px -155px;
+}
+.copyright .content .i2{
+    background: url("./images/service.png") no-repeat -168px -155px;
+}
+.copyright .content .i3 {
+    background: url("./images/service.png") no-repeat -148px -155px;
+}
+.copyright .content .i4 {
+    background: url("./images/service.png") no-repeat -128px -155px;
+}
+.copyright .content .i5 {
+    background: url("./images/service.png") no-repeat -108px -172px;
+}
+.auth {
+    margin: 25px 0;
+}
+.auth a {
+    display: inline-block;
+    overflow: hidden;
+    margin:0 3px;
+    width: 103px;
+    height: 32px;
+    line-height: 500px;
+}
+.auth a:nth-child(1) {
+    background: url("./images/service.png") no-repeat -205px -111px;
+}
+.auth a:nth-child(2) {
+    background: url("./images/service.png") no-repeat -205px -74px;
+}
+.auth a:nth-child(3) {
+    background: url("./images/service.png") no-repeat -205px -37px;
+}
+.auth a:nth-child(4) {
+    background: url("./images/service.png") no-repeat -205px 0;
+}
+.auth a:nth-child(5) {
+    background: url("./images/service.png") no-repeat 0 -155px;
 }
