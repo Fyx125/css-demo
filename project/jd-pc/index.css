@@ -173,6 +173,39 @@
 
 .expand {
     height: 220px;
-    background-color: #cccccc;
     margin-top: 5px;
+}
+.expand .expand-t {
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+}
+.expand-t ul li {
+    float: left;
+    width: 33.3%;
+    position: relative;
+}
+.expand-t li span {
+    height: 32px;
+    color: #666;
+}
+.expand-t li span::before {
+    content: " ";
+    position: absolute;
+    width: 24px;
+    height: 0;
+    left: 50%;
+    margin-left: -12px;
+    bottom: 0;
+    border-bottom: 2px solid #fff;
+}
+.expand-t li:hover span, .expand-t li .active {
+    color: #e1251b;
+}
+.expand-t li:hover span::before, .expand-t li .active::before {
+    border-bottom-color: #e1251b;
+}
+.expand-b {
+    font-size: 12px;
 }
